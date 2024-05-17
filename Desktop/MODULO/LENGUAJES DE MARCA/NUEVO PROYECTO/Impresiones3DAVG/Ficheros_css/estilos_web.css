@@ -1,0 +1,524 @@
+/* Estilos para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Cambiamos el color de fondo a un tono más claro */
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #4d4d7a; /* Cambiamos el color de fondo a un morado más oscuro */
+    color: #fff; /* Texto blanco para contrastar */
+    padding: 20px;
+    text-align: center;
+}
+/* Estilo para el texto "Portada" en el encabezado */
+header h1 {
+    margin: 0; /* Eliminamos el margen predeterminado para centrar el texto */
+    text-align: center;
+}
+
+/* Estilos para la barra de navegación */
+nav ul {
+    list-style-type: none;
+    margin: 0 auto; /* Centrar la barra de navegación horizontalmente */
+    padding: 0;
+    background-color: #666699; /* Morado más claro para la barra de navegación */
+    overflow: hidden;
+    text-align: center; /* Centrar los elementos de la barra de navegación */
+}
+
+nav ul li {
+    display: inline; /* Para que los elementos floten horizontalmente */
+}
+
+nav ul li a {
+    display: inline-block; /* Para que los enlaces se comporten como bloques */
+    color: #ddd; /* Texto gris claro para los enlaces */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #9999cc; /* Color de fondo más claro al pasar el ratón */
+}
+
+/* Estilos para el contenido principal */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #4d4d7a; /* Cambiamos el color de fondo a un morado más oscuro */
+    color: #fff; /* Texto blanco para contrastar */
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilos para la tabla */
+table {
+    width: 100%; /* Establecemos el ancho al 100% para que ocupe todo el ancho de la página */
+    border-collapse: collapse;
+    margin-bottom: 20px; /* Espacio inferior para separar de otros elementos */
+    background-color: #fff; /* Cambiamos el color de fondo a blanco */
+}
+
+/* Estilo para las celdas de título */
+.titulo {
+    font-weight: bold;
+    background-color: #9999cc; /* Morado claro para los títulos */
+    color: #333; /* Texto gris oscuro para los títulos */
+    padding: 10px; /* Espaciado interno */
+    text-align: center; /* Centrar el texto horizontalmente */
+    vertical-align: middle; /* Centrar el texto verticalmente */
+    border-radius: 10px;
+}
+
+/* Estilos para las celdas de contenido */
+td {
+    padding: 10px; /* Espaciado interno */
+    text-align: center; /* Centrar el texto horizontalmente */
+    vertical-align: middle; /* Centrar el texto verticalmente */
+}
+/* Estilos para la galería dentro de las celdas */
+.gallery {
+    text-align: center; /* Centrar todo el contenido de la galería */
+}
+
+.gallery .item {
+    display: inline-block; /* Mostrar elementos en línea */
+    margin: 10px; /* Espacio entre elementos */
+    width: 350px; /* Ancho de cada elemento */
+    vertical-align: top; /* Alinear los elementos en la parte superior */
+}
+
+/* Estilos para las imágenes dentro de la galería */
+.item img {
+    width: 350px; /* Mantener el ancho de la imagen */
+    height: 250px; /* Mantener la relación de aspecto */
+    border-radius: 10px;
+}
+
+/* Estilos para la descripción */
+.descripcion {
+    text-align: left; /* Alineamos el texto a la izquierda */
+    color: #333; /* Texto gris oscuro */
+}
+
+/* Estilos para el contenedor del video */
+.video-container {
+    max-width: 700px; /* Establecemos un ancho máximo para el contenedor del video */
+    margin: 0 auto; /* Centramos el contenedor horizontalmente */
+    overflow: hidden; /* Para evitar que el video sobresalga del contenedor */
+    margin-top: 20px; /* Espacio superior para separar del texto */
+    border-radius: 10px; /* Bordes redondeados */
+    border: 2px solid #9999cc; /* Borde sólido similar al de las imágenes */
+}
+
+.video-container iframe {
+    width: 100%; /* El video ocupará el ancho completo del contenedor */
+    height: 370px; /* La altura se ajustará automáticamente para mantener la proporción */
+    border: 0; /* Quitamos el borde del iframe */
+    display: block; /* Hacemos que el iframe sea un elemento de bloque */
+    margin: 0 auto; /* Centramos el iframe horizontalmente */
+}
+
+/* Estilos para el footer */
+.footer {
+    background-color: #666699;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: inline-block; /* Mostrar los elementos en línea */
+}
+
+.footer-column {
+    display: inline-block; /* Mostrar los elementos en línea */
+    margin: 0 300px; /* Aumentar el espacio entre las columnas */
+    position: relative; /* Establecer posición relativa */
+    vertical-align: middle; /* Alinear verticalmente */
+}
+
+.footer-column a {
+    text-decoration: none;
+    color: #fff;
+    display: block; /* Convertir los enlaces en bloques */
+    margin-bottom: 10px; /* Añadir espacio entre los elementos */
+    transition: transform 0.3s ease-in-out; /* Agregar transición al efecto hover */
+}
+
+.footer-column a:hover {
+    transform: scale(1.1); /* Hacer que el enlace se agrande al pasar el ratón */
+}
+
+.footer-column img {
+    width: 30px; /* Ajustar el tamaño de la imagen */
+    height: auto;
+    display: inline-block; /* Mostrar la imagen en línea */
+    vertical-align: middle; /* Alinear verticalmente al centro */
+    margin-right: 10px; /* Añadir espacio entre la imagen y el texto */
+}
+
+/* Estilos para los títulos y descripciones de la tabla Artillery */
+#artillery-table h3, #artillery-table p {
+    background-color: #ddd; /* Fondo gris para los títulos y descripciones */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estilos para las imágenes de la tabla Artillery */
+#artillery-table img {
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estilos para los títulos y descripciones de la tabla AnyCubic */
+#anycubic-table h3, #anycubic-table p {
+    background-color: #ddd; /* Fondo gris para los títulos y descripciones */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estilos para las imágenes de la tabla AnyCubic */
+#anycubic-table img {
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estilos para los títulos y descripciones de la tabla Creality */
+#creality-table h3, #creality-table p {
+    background-color: #ddd; /* Fondo gris para los títulos y descripciones */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estilos para las imágenes de la tabla Creality */
+#creality-table img {
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estilos para los títulos y descripciones de la tabla Prusa Research */
+#prusa-table h3, #prusa-table p {
+    background-color: #ddd; /* Fondo gris para los títulos y descripciones */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estilos para las imágenes de la tabla Prusa Research */
+#prusa-table img {
+    border-radius: 10px; /* Bordes redondeados */
+}
+/* Efecto hover para los títulos y descripciones de las tablas */
+#artillery-table h3:hover, #artillery-table p:hover,
+#anycubic-table h3:hover, #anycubic-table p:hover,
+#creality-table h3:hover, #creality-table p:hover,
+#prusa-table h3:hover, #prusa-table p:hover {
+    transform: scale(1.05); /* Aumentar ligeramente el tamaño */
+    transition: transform 0.3s ease; /* Transición suave */
+}
+
+/* Estilos para las imágenes dentro de las tablas */
+#artillery-table img,
+#anycubic-table img,
+#creality-table img,
+#prusa-table img {
+    width: 350px; /* Mantener el ancho de la imagen */
+    height: 250px; /* Mantener la relación de aspecto */
+    border-radius: 10px; /* Bordes redondeados */
+    border: 2px solid #9999cc; /* Borde sólido */
+    transition: transform 0.3s ease; /* Transición suave */
+    margin-bottom: 10px; /* Espacio entre las imágenes */
+}
+
+/* Efecto hover para las imágenes de las tablas */
+#artillery-table img:hover,
+#anycubic-table img:hover,
+#creality-table img:hover,
+#prusa-table img:hover {
+    transform: scale(1.05); /* Aumentar ligeramente el tamaño */
+    transition: transform 0.3s ease; /* Transición suave */
+}
+/* Efecto hover para las imágenes dentro de la tabla del índice */
+#portada .gallery .item img:hover {
+    transform: scale(1.05); /* Aumentar ligeramente el tamaño */
+    transition: transform 0.3s ease; /* Transición suave */
+}
+/* Estilos para las imágenes dentro de la tabla del índice */
+#portada .gallery .item img {
+    width: 350px; /* Mantener el ancho de la imagen */
+    height: 250px; /* Mantener la relación de aspecto */
+    border-radius: 10px; /* Bordes redondeados */
+    border: 2px solid #9999cc; /* Borde sólido */
+    transition: transform 0.3s ease; /* Transición suave */
+    margin-bottom: 10px; /* Espacio entre las imágenes */
+}
+/* Estilos para los párrafos dentro de la tabla del índice */
+#portada .gallery .item p {
+    background-color: #ddd; /* Fondo gris para los párrafos */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    transition: transform 0.3s ease; /* Transición suave */
+}
+
+/* Efecto hover para los párrafos de la tabla del índice */
+#portada .gallery .item p:hover {
+    transform: scale(1.05); /* Aumentar ligeramente el tamaño */
+    transition: transform 0.3s ease; /* Transición suave */
+}
+/* Estilos para la tabla consultas*/
+#consultas .tabla-consultas {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#consultas .tabla-consultas th,
+#consultas .tabla-consultas td {
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+}
+
+#consultas .tabla-consultas th {
+    font-weight: bold;
+    background-color: #9999cc;
+    color: #333;
+}
+
+#consultas .tabla-consultas td {
+    display: table-cell;
+}
+/* Estilos para el listado de usos */
+#filamentos ul li {
+    list-style-type: none;
+}
+/* Estilos para las tablas de filamentos */
+#pla-table, #abs-table, #petg-table, #tpu-table, #nylon-table, #resina-estandar-table, #resina-joyeria-table {
+    max-width: 15.7%; /* Establecer el ancho máximo */
+    border-collapse: collapse;
+    background-color: #fff; /* Color de fondo */
+    display: inline-block; /* Mostrar las tablas en línea */
+    margin-right: 5px; /* Espacio a la derecha */
+    vertical-align: top; /* Alinear las tablas en la parte superior */
+    margin-bottom: 20px; /* Espacio inferior */
+    table-layout: fixed; /* Agregamos esta propiedad para controlar el ancho de la tabla */
+}
+
+/* Estilos para las celdas de contenido en las tablas de filamentos */
+#pla-table td, #abs-table td, #petg-table td, #tpu-table td, #nylon-table td, #resina-estandar-table td, #resina-joyeria-table td {
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Estilos para las imágenes dentro de las tablas de filamentos */
+#pla-table img, #abs-table img, #petg-table img, #tpu-table img, #nylon-table img, #resina-estandar-table img, #resina-joyeria-table img {
+    width: 350px; /* Ancho de la imagen */
+    height: 250px; /* Altura de la imagen */
+    border-radius: 10px; /* Bordes redondeados */
+    border: 2px solid #9999cc; /* Borde sólido */
+    transition: transform 0.3s ease; /* Transición suave */
+    margin-bottom: 10px; /* Espacio entre las imágenes */
+    
+}
+/* Estilos para las celdas de título en las tablas de filamentos */
+#pla-table .titulo, #abs-table .titulo, #petg-table .titulo, #tpu-table .titulo, #nylon-table .titulo, #resina-estandar-table .titulo, #resina-joyeria-table .titulo {
+    font-weight: bold;
+    background-color: #9999cc; /* Morado claro para los títulos */
+    color: #333; /* Texto gris oscuro para los títulos */
+    padding: 10px; /* Espaciado interno */
+    text-align: center; /* Centrar el texto horizontalmente */
+    vertical-align: middle; /* Centrar el texto verticalmente */
+    border-radius: 10px;
+    padding-left: 15px; /* Desplazar el título hacia la derecha */
+}
+
+/* Efecto hover para las imágenes de las tablas de filamentos */
+#pla-table img:hover, #abs-table img:hover, #petg-table img:hover, #tpu-table img:hover, #nylon-table img:hover, #resina-estandar-table img:hover, #resina-joyeria-table img:hover {
+    transform: scale(1.05); /* Aumentar ligeramente el tamaño */
+    transition: transform 0.3s ease; /* Transición suave */
+}
+
+/* Estilos para las descripciones en las tablas de filamentos */
+#pla-table p, #abs-table p, #petg-table p, #tpu-table p, #nylon-table p, #resina-estandar-table p, #resina-joyeria-table p {
+    background-color: #ddd; /* Fondo gris para las descripciones */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    margin: 5px; /* Margen entre las descripciones */
+}
+
+/* Efecto hover para los títulos y descripciones de las tablas de filamentos */
+#pla-table .titulo:hover, #abs-table .titulo:hover, #petg-table .titulo:hover, #tpu-table .titulo:hover, #nylon-table .titulo:hover, #resina-estandar-table .titulo:hover, #resina-joyeria-table .titulo:hover,
+#pla-table p:hover, #abs-table p:hover, #petg-table p:hover, #tpu-table p:hover, #nylon-table p:hover, #resina-estandar-table p:hover, #resina-joyeria-table p:hover {
+    transform: scale(1.05); /* Aumentar ligeramente el tamaño */
+    transition: transform 0.3s ease; /* Transición suave */
+}
+
+/* Estilos para los elementos <ul> dentro de las tablas de filamentos */
+#pla-table ul, #abs-table ul, #petg-table ul, #tpu-table ul, #nylon-table ul, #resina-estandar-table ul, #resina-joyeria-table ul {
+    list-style-type: none; /* Quitamos los marcadores de lista */
+    padding: 0; /* Eliminamos el relleno predeterminado */
+}
+
+/* Estilos para los elementos <li> dentro de las tablas de filamentos */
+#pla-table li, #abs-table li, #petg-table li, #tpu-table li, #nylon-table li, #resina-estandar-table li, #resina-joyeria-table li {
+    background-color: #ddd; /* Fondo gris para los elementos <li> */
+    padding: 5px 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    margin: 5px 0; /* Margen entre los elementos <li> */
+    transition: transform 0.3s ease; /* Transición suave */
+}
+
+/* Efecto hover para los elementos <li> dentro de las tablas de filamentos */
+#pla-table li:hover, #abs-table li:hover, #petg-table li:hover, #tpu-table li:hover, #nylon-table li:hover, #resina-estandar-table li:hover, #resina-joyeria-table li:hover {
+    transform: scale(1.05); /* Aumentar ligeramente el tamaño */
+}
+
+
+/* Estilos para las tablas de programas */
+#cura-table,
+#prusaslicer-table,
+#simplify3d-table {
+    width: 100%; /* Establecemos el ancho al 100% para que ocupe todo el ancho de la página */
+    border-collapse: collapse;
+    margin-bottom: 20px; /* Espacio inferior para separar de otros elementos */
+    background-color: #fff; /* Cambiamos el color de fondo a blanco */
+}
+
+/* Estilos para las celdas de título en las tablas de programas */
+#cura-table .titulo,
+#prusaslicer-table .titulo,
+#simplify3d-table .titulo {
+    font-weight: bold;
+    background-color: #9999cc; /* Morado claro para los títulos */
+    color: #333; /* Texto gris oscuro para los títulos */
+    padding: 10px; /* Espaciado interno */
+    text-align: center; /* Centrar el texto horizontalmente */
+    vertical-align: middle; /* Centrar el texto verticalmente */
+    border-radius: 10px;
+}
+
+/* Estilos para las celdas de contenido en las tablas de programas */
+#cura-table td,
+#prusaslicer-table td,
+#simplify3d-table td {
+    padding: 10px; /* Espaciado interno */
+    text-align: center; /* Centrar el texto horizontalmente */
+    vertical-align: middle; /* Centrar el texto verticalmente */
+}
+
+/* Estilos para las imágenes dentro de las tablas de programas */
+#cura-table img,
+#prusaslicer-table img,
+#simplify3d-table img {
+    max-width: 350px; /* Establecemos un ancho máximo para las imágenes */
+    height: auto; /* Mantenemos la relación de aspecto */
+    border-radius: 10px; /* Bordes redondeados */
+    border: 2px solid #9999cc; /* Borde sólido */
+    transition: transform 0.3s ease; /* Transición suave */
+    margin-bottom: 10px; /* Espacio entre las imágenes */
+}
+
+/* Efecto hover para las imágenes de las tablas de programas */
+#cura-table img:hover,
+#prusaslicer-table img:hover,
+#simplify3d-table img:hover {
+    transform: scale(1.05); /* Aumentar ligeramente el tamaño */
+    transition: transform 0.3s ease; /* Transición suave */
+}
+
+/* Estilos para las descripciones en las tablas de programas */
+#cura-table p,
+#prusaslicer-table p,
+#simplify3d-table p {
+    background-color: #ddd; /* Fondo gris para las descripciones */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    margin: 5px; /* Margen entre las descripciones */
+}
+
+/* Efecto hover para los títulos y descripciones de las tablas de programas */
+#cura-table .titulo:hover,
+#prusaslicer-table .titulo:hover,
+#simplify3d-table .titulo:hover,
+#cura-table p:hover,
+#prusaslicer-table p:hover,
+#simplify3d-table p:hover {
+    transform: scale(1.05); /* Aumentar ligeramente el tamaño */
+    transition: transform 0.3s ease; /* Transición suave */
+}
+/* Estilos para las tablas de impresiones */
+#impresion1-table {
+    max-width: 390px ; /* Establecemos el ancho al 33.33% del contenedor y restamos el margen */
+    border-collapse: collapse;
+    margin-bottom: 20px; /* Espacio inferior para separar de otros elementos */
+    background-color: #fff; /* Cambiamos el color de fondo a blanco */
+    display: inline-block; /* Mostrar las tablas en línea */
+    margin-right: 20px; /* Espacio a la derecha para separar las tablas */
+    vertical-align: top; /* Alinear las tablas en la parte superior */
+}
+
+/* Estilos para las celdas de título en las tablas de impresiones */
+#impresion1-table .titulo {
+    font-weight: bold;
+    background-color: #9999cc;
+    color: #333;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 10px;
+}
+
+/* Estilos para las celdas de contenido en las tablas de impresiones */
+#impresion1-table td {
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    width: 200px;
+}
+
+/* Estilos para el Model Viewer dentro de las tablas de impresiones */
+#impresion1-table model-viewer {
+    max-width: 100%;
+    height: 350px;
+    border-radius: 10px;
+    border: 2px solid #9999cc;
+    transition: transform 0.3s ease;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Efecto hover para el Model Viewer dentro de las tablas de impresiones */
+#impresion1-table model-viewer:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Estilos para los párrafos dentro de las tablas de impresiones */
+#impresion1-table td p {
+    background-color: #ddd;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px auto; /* Centramos los párrafos horizontalmente */
+    max-width: 300px;
+    display: block;
+    text-align: center; /* Centramos el texto dentro de los párrafos */
+}
+/* Efecto hover para los títulos y descripciones de las tablas de impresiones */
+#impresion1-table .titulo:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+#impresion1-table p:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}

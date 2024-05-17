@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        elementFormDefault="qualified">
+
+    <!--DOCUMENTACION DEL ESQUEMA -->
+    <xs:annotation>
+        <xs:documentation xml:lang="es-es">
+            <titulo>Impresiones 3DAVG</titulo>
+            <modulo>LMGSI</modulo>
+            <fecha_creacion>16/05/2024</fecha_creacion>
+            <autor>Antonio Vilarta Gil</autor>
+        </xs:documentation>
+    </xs:annotation>
+
+  <!-- Definición de tipos de datos -->
+  <xs:simpleType name="tipoImpresion">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="FDM"/>
+      <xs:enumeration value="SLA"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  
+
+  <!-- Definición del elemento raíz -->
+  
+  <xs:element name="Impresiones3DAVG">
+    <xs:complexType>
+      <xs:sequence>
+        <!-- Sección de Portada -->
+        <xs:element name="Portada">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Descripcion" type="xs:string"/>
+              <xs:element name="Usos">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Uso" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <!-- Sección de Impresoras3D -->
+        <xs:element name="Impresoras3D">
+          <xs:complexType>
+            <xs:sequence>
+              <!-- Sección de Marcas -->
+              <xs:element name="Marcas" minOccurs="1" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Marca" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <!-- Sección de Impresoras -->
+                          <xs:element name="Impresora" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Modelo" type="xs:string"/>
+                                <xs:element name="Tipo" type="tipoImpresion"/>
+                                <xs:element name="Descripcion" type="xs:string"/>
+                                <xs:element name="Precio">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:decimal">
+                                      <xs:fractionDigits value="2"/>
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                              </xs:sequence>
+                              <xs:attribute name="codigo">
+                                <xs:simpleType>
+                                  <xs:restriction base="xs:string">
+                                    <xs:pattern value="IMPR-[\w]+"/>
+                                  </xs:restriction>
+                                </xs:simpleType>
+                              </xs:attribute>
+                              <xs:attribute name="nombre" type="xs:string" use="required"/>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="nombre" type="xs:string" use="required"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            <!-- Sección de Filamentos -->
+            <xs:element name="Filamentos">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Tipos" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="Tipo" maxOccurs="unbounded">
+                          <xs:complexType>
+                            <xs:sequence>
+                              <xs:element name="Descripcion" type="xs:string"/>
+                              <xs:element name="Precio">
+                                <xs:simpleType>
+                                  <xs:restriction base="xs:decimal">
+                                    <xs:fractionDigits value="2"/>
+                                  </xs:restriction>
+                                </xs:simpleType>
+                              </xs:element>
+                              <xs:element name="Usos">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Uso" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+                                     </xs:sequence>
+                                </xs:complexType>
+                                </xs:element>
+                            </xs:sequence>
+                            <xs:attribute name="codigo">
+                              <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                  <xs:pattern value="FIL-[\w]+"/>
+                                </xs:restriction>
+                              </xs:simpleType>
+                            </xs:attribute>
+                            <xs:attribute name="nombre" type="xs:string" use="required"/>
+                          </xs:complexType>
+                        </xs:element>
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <!-- Sección de Programas -->
+            <xs:element name="Programas">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Programa" maxOccurs="unbounded">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="Descripcion" type="xs:string"/>
+                      </xs:sequence>
+                      <xs:attribute name="codigo">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:pattern value="PROG-[\w]+"/>
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:attribute>
+                      <xs:attribute name="nombre" type="xs:string" use="required"/>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <!-- Sección de Impresiones -->
+            <xs:element name="Impresiones">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Impresion" maxOccurs="unbounded">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="Nombre" type="xs:string"/>
+                        <xs:element name="TipoArchivo" type="xs:string"/>
+                        <xs:element name="Impresora" type="xs:string"/>
+                        <xs:element name="Filamento" type="xs:string"/>
+                        <xs:element name="Programas">
+                          <xs:complexType>
+                            <xs:sequence>
+                              <xs:element name="Programa" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+                            </xs:sequence>
+                          </xs:complexType>
+                        </xs:element>
+                        <xs:element name="Soportes" type="xs:string"/>
+                        <xs:element name="Descripcion" type="xs:string"/>
+                        <xs:element name="Precio">
+                          <xs:simpleType>
+                            <xs:restriction base="xs:decimal">
+                              <xs:fractionDigits value="2"/>
+                            </xs:restriction>
+                          </xs:simpleType>
+                        </xs:element>
+                      </xs:sequence>
+                      <xs:attribute name="codigo">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:pattern value="IMPRE-[\w]+"/>
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:attribute>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+                    

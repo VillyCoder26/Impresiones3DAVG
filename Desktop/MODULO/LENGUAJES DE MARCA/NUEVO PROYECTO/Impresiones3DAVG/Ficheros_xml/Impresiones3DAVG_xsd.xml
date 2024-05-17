@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Impresiones3DAVG xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" 
+        xs:noNamespaceSchemaLocation="Impresiones3DAVG.xsd">
+    <Portada>
+        <Descripcion>Las impresoras 3D han revolucionado la fabricación permitiendo la creación de objetos físicos a partir de modelos digitales. Se utilizan en diversas industrias como la automotriz, médica y de entretenimiento.</Descripcion>
+        <Usos>
+            <Uso>Prototipado rápido</Uso>
+            <Uso>Producción de herramientas</Uso>
+            <Uso>Fabricación de piezas personalizadas</Uso>
+            <Uso>Educación</Uso>
+            <Uso>Hobby y arte</Uso>
+        </Usos>
+    </Portada>
+    <Impresoras3D>
+        <Marcas>
+            <Marca nombre="Artillery">
+                <Impresora codigo="IMPR-ARTIH" nombre="Artillery Hornet">
+                    <Modelo>Hornet</Modelo>
+                    <Tipo>FDM</Tipo>
+                    <Descripcion>La nueva impresora 3D Artillery Hornet, es una impresora 3D de estilo cartesiano todo en uno. 
+                        La impresora Artillery Hornet es ultra silenciosa y tiene controladores 32bits paso a paso, tiene un extrusor tipo bowden, nozzle 0.4mm compatible E3D V6, eje Z doble, cama calefactada de corriente CA y pantalla táctil TFT.</Descripcion>
+                    <Precio>200.05</Precio>
+                </Impresora>
+                <Impresora codigo="IMPR-ARTIX1" nombre="Artillery Sidewinder X1">
+                    <Modelo>Sidewinder X1</Modelo>
+                    <Tipo>FDM</Tipo>
+                    <Descripcion>Artillery Sidewinder X1 es una impresora 3D con mayúsculas, ofrece una calidad de impresión difícil de superar.
+                        Su sistema de extrusión directa y su gran versatilidad le permiten imprimir muy bien con una amplia gama de materiales, incluido flexibles, donde supera a la mayoría.
+                        Destaca por su sigilosa impresión y rapidez, tanto en velocidad de impresión, que es realmente alta, como en la velocidad de calentamiento de la cama.
+                        Esta impresora 3D Artillery tiene de detector de falta de filamento, pausa y reanudación de impresión tras un corte de corriente.</Descripcion>
+                    <Precio>435</Precio>
+                </Impresora>
+            </Marca>
+            <Marca nombre="AnyCubic">
+                <Impresora codigo="IMPR-ANYPHX2" nombre="Anycubic Photon Mono X2">
+                    <Modelo>Mono X2</Modelo>
+                    <Tipo>SLA</Tipo>
+                    <Descripcion>La Anycubic Photon Mono X2 es una impresora 3D de resina LCD que destaca por su pantalla monocromática 4K de 6.6 pulgadas, la cual permite imprimir modelos con una increíble precisión y detalles finos. 
+                        Esta impresora está diseñada tanto para profesionales como para aficionados avanzados que buscan resultados de alta calidad en sus proyectos de impresión 3D.</Descripcion>
+                    <Precio>600.99</Precio>
+                </Impresora>
+                <Impresora codigo="IMPR-ANYI3MS" nombre="Anycubic i3 Mega S">
+                    <Modelo>i3 Mega S</Modelo>
+                    <Tipo>FDM</Tipo>
+                    <Descripcion>La Anycubic i3 Mega S es una impresora 3D FDM robusta y fácil de usar, ideal para principiantes y usuarios avanzados. 
+                        Con una estructura metálica sólida y varias características que facilitan la experiencia de impresión, la i3 Mega S es conocida por su fiabilidad y calidad de impresión.</Descripcion>
+                    <Precio>812</Precio>
+                </Impresora>
+            </Marca>
+            <Marca nombre="Creality">
+                <Impresora codigo="IMPR-CREALITY01" nombre="Creality LD-002H">
+                    <Modelo>LD-002H</Modelo>
+                    <Tipo>SLA</Tipo>
+                    <Descripcion>Impresora 3D de resina con pantalla monocromática 2K, ideal para impresiones detalladas y rápidas.</Descripcion>
+                    <Precio>215.50</Precio>
+                </Impresora>
+                <Impresora codigo="IMPR-CREALITY02" nombre="Creality Ender 3 V2">
+                    <Modelo>Ender 3 V2</Modelo>
+                    <Tipo>FDM</Tipo>
+                    <Descripcion>Impresora 3D FDM popular y asequible, ideal para principiantes y makers.</Descripcion>
+                    <Precio>220</Precio>
+                </Impresora>
+            </Marca>
+            <Marca nombre="Prusa Research">
+                <Impresora codigo="IMPR-PRUSA01" nombre="Prusa Research SL1">
+                    <Modelo>SL1</Modelo>
+                    <Tipo>SLA</Tipo>
+                    <Descripcion>Impresora 3D de resina de alta calidad con pantalla LCD de alta resolución.</Descripcion>
+                    <Precio>523.67</Precio>
+                </Impresora>
+                <Impresora codigo="IMPR-PRUSA02" nombre="Prusa Research Prusa i3 MK3S+">
+                    <Modelo>i3 MK3S+</Modelo>
+                    <Tipo>FDM</Tipo>
+                    <Descripcion>Impresora 3D FDM de calidad reconocida por su fiabilidad y facilidad de uso.</Descripcion>
+                    <Precio>750.20</Precio>
+                </Impresora>
+            </Marca> 
+        </Marcas>
+    <Filamentos>
+        <Tipos>
+            <Tipo codigo="FIL-PL01" nombre="PLA">
+                <Descripcion>Filamento biodegradable y fácil de imprimir.</Descripcion>
+                <Precio>25</Precio>
+                <Usos>
+                    <Uso>Prototipado rápido</Uso>
+                    <Uso>Objetos decorativos</Uso>
+                </Usos>
+            </Tipo>
+            <Tipo codigo="FIL-ABS01" nombre="ABS">
+                <Descripcion>Filamento resistente y duradero, ideal para piezas funcionales.</Descripcion>
+                <Precio>30</Precio>
+                <Usos>
+                    <Uso>Piezas mecánicas</Uso>
+                    <Uso>Juguetes</Uso>
+                </Usos>
+            </Tipo>
+            <Tipo codigo="FIL-PETG01" nombre="PETG">
+                <Descripcion>Filamento resistente y flexible, ideal para aplicaciones mecánicas y funcionales.</Descripcion>
+                <Precio>35</Precio>
+                <Usos>
+                    <Uso>Piezas funcionales</Uso>
+                    <Uso>Prototipado</Uso>
+                </Usos>
+            </Tipo>
+            <Tipo codigo="FIL-PU01" nombre="TPU">
+                <Descripcion>Filamento flexible con alta resistencia al impacto, perfecto para impresiones que requieren flexibilidad.</Descripcion>
+                <Precio>40</Precio>
+                <Usos>
+                    <Uso>Calzado</Uso>
+                    <Uso>Juguetes</Uso>
+                </Usos>
+            </Tipo>
+            <Tipo codigo="FIL-Nylon01" nombre="Nylon">
+                <Descripcion>Filamento resistente a la abrasión y al impacto, adecuado para piezas duraderas y funcionales.</Descripcion>
+                <Precio>50</Precio>
+                <Usos>
+                    <Uso>Engranajes</Uso>
+                    <Uso>Componentes de maquinaria</Uso>
+                </Usos>
+            </Tipo>
+            <Tipo codigo="FIL-Resina01" nombre="Resina Estándar">
+                <Descripcion>Resina estándar para impresión SLA, adecuada para una variedad de aplicaciones.</Descripcion>
+                <Precio>60</Precio>
+                <Usos>
+                    <Uso>Prototipado</Uso>
+                    <Uso>Modelado dental</Uso>
+                </Usos>
+            </Tipo>
+            <Tipo codigo="FIL-Resina02" nombre="Resina para Joyería">
+                <Descripcion>Resina especializada para impresión de joyería con alta precisión y detalles finos.</Descripcion>
+                <Precio>70</Precio>
+                <Usos>
+                    <Uso>Impresión de joyería</Uso>
+                </Usos>
+            </Tipo>
+            <Tipo codigo="FIL-Resina03" nombre="Resina Dental">
+                <Descripcion>Resina médica para impresiones dentales de alta precisión y biocompatibilidad.</Descripcion>
+                <Precio>80</Precio>
+                <Usos>
+                    <Uso>Odontología</Uso>
+                    <Uso>Ortodoncia</Uso>
+                </Usos>
+            </Tipo>
+        </Tipos>
+    </Filamentos>
+    <Programas>
+        <Programa nombre="Cura">
+            <Descripcion>Software de corte 3D gratuito y de código abierto.</Descripcion>
+        </Programa>
+        <Programa nombre="PrusaSlicer">
+            <Descripcion>Programa de corte 3D avanzado para impresoras Prusa.</Descripcion>
+        </Programa>
+        <Programa nombre="Simplify3D">
+            <Descripcion>Software de corte 3D profesional con características avanzadas.</Descripcion>
+        </Programa>
+    </Programas>
+    <Impresiones>
+        <Impresion codigo="IMPRE-IMP01">
+            <Nombre>Prototipo de Automóvil</Nombre>
+            <TipoArchivo>STL</TipoArchivo>
+            <Impresora>Artillery Hornet</Impresora>
+            <Filamento>PLA</Filamento>
+            <Programas>
+                <Programa>Cura</Programa>
+            </Programas>
+            <Soportes>Impresión con soportes automáticos generados por Cura.</Soportes>
+            <Descripcion>Un prototipo a escala de un automóvil usando impresora Artillery Hornet y filamento PLA.</Descripcion>
+            <Precio>25</Precio>
+        </Impresion>
+        <Impresion codigo="IMPRE-IMP02">
+            <Nombre>Juguete Mecánico</Nombre>
+            <TipoArchivo>OBJ</TipoArchivo>
+            <Impresora>Artillery Sidewinder X1</Impresora>
+            <Filamento>ABS</Filamento>
+            <Programas>
+                <Programa>PrusaSlicer</Programa>
+            </Programas>
+            <Soportes>Soportes manuales diseñados en PrusaSlicer.</Soportes>
+            <Descripcion>Un juguete mecánico impreso con la impresora Artillery Sidewinder X1 y filamento ABS.</Descripcion>
+            <Precio>10</Precio>
+        </Impresion>
+        <Impresion codigo="IMPRE-IMP03">
+            <Nombre>Estatuilla de Dragón</Nombre>
+            <TipoArchivo>STL</TipoArchivo>
+            <Impresora>Anycubic Photon Mono X2</Impresora>
+            <Filamento>PLA</Filamento>
+            <Programas>
+                <Programa>Cura</Programa>
+            </Programas>
+            <Soportes>Impresión con soportes automáticos generados por Cura.</Soportes>
+            <Descripcion>Una estatuilla de un dragón impresa en la Anycubic Photon Mono X2 utilizando filamento PLA.</Descripcion>
+            <Precio>30</Precio>
+        </Impresion>
+        <Impresion codigo="IMPRE-IMP04">
+            <Nombre>Miniatura de Edificio Histórico</Nombre>
+            <TipoArchivo>OBJ</TipoArchivo>
+            <Impresora>Creality Ender 3 V2</Impresora>
+            <Filamento>ABS</Filamento>
+            <Programas>
+                <Programa>PrusaSlicer</Programa>
+            </Programas>
+            <Soportes>Soportes manuales diseñados en PrusaSlicer.</Soportes>
+            <Descripcion>Una miniatura detallada de un edificio histórico impresa en la Creality Ender 3 V2 utilizando filamento ABS.</Descripcion>
+            <Precio>20</Precio>
+        </Impresion>
+        <Impresion codigo="IMPRE-IMP05">
+            <Nombre>Pieza de Repuesto para Bicicleta</Nombre>
+            <TipoArchivo>STL</TipoArchivo>
+            <Impresora>Prusa Research Prusa i3 MK3S+</Impresora>
+            <Filamento>ABS</Filamento>
+            <Programas>
+                <Programa>Simplify3D</Programa>
+            </Programas>
+            <Soportes>No se requieren soportes para esta impresión.</Soportes>
+            <Descripcion>Una pieza de repuesto funcional para una bicicleta impresa en la Prusa Research Prusa i3 MK3S+ utilizando filamento ABS.</Descripcion>
+            <Precio>15</Precio>
+        </Impresion>
+        <Impresion codigo="IMPRE-IMP06">
+            <Nombre>Prototipo de Pieza Industrial</Nombre>
+            <TipoArchivo>STL</TipoArchivo>
+            <Impresora>Artillery Sidewinder X1</Impresora>
+            <Filamento>PLA</Filamento>
+            <Programas>
+                <Programa>Cura</Programa>
+            </Programas>
+            <Soportes>Impresión con soportes automáticos generados por Cura.</Soportes>
+            <Descripcion>Un prototipo funcional de una pieza industrial impresa en la Artillery Sidewinder X1 utilizando filamento PLA.</Descripcion>
+            <Precio>40</Precio>
+        </Impresion>
+        <Impresion codigo="IMPRE-IMP07">
+            <Nombre>Anillo Prototipo</Nombre>
+            <TipoArchivo>STL</TipoArchivo>
+            <Impresora>Anycubic Photon Mono X2</Impresora>
+            <Filamento>Resina Estándar</Filamento>
+            <Programas>
+                <Programa>Cura</Programa>
+            </Programas>
+            <Soportes>Impresión con soportes automáticos generados por Cura.</Soportes>
+            <Descripcion>Un anillo prototipo impreso en resina estándar utilizando la Anycubic Photon Mono X2.</Descripcion>
+            <Precio>50</Precio>
+        </Impresion>
+        <Impresion codigo="IMPRE-IMP08">
+            <Nombre>Figura de Acción</Nombre>
+            <TipoArchivo>OBJ</TipoArchivo>
+            <Impresora>Prusa Research SL1</Impresora>
+            <Filamento>Resina Estándar</Filamento>
+            <Programas>
+                <Programa>PrusaSlicer</Programa>
+            </Programas>
+            <Soportes>Soportes manuales diseñados en PrusaSlicer.</Soportes>
+            <Descripcion>Una figura de acción detallada impresa en resina estándar utilizando la Prusa Research SL1.</Descripcion>
+            <Precio>70</Precio>
+        </Impresion>
+        <Impresion codigo="IMPRE-IMP09">
+            <Nombre>Colgante de Corazón</Nombre>
+            <TipoArchivo>STL</TipoArchivo>
+            <Impresora>Creality LD-002H</Impresora>
+            <Filamento>Resina para Joyería</Filamento>
+            <Programas>
+                <Programa>Simplify3D</Programa>
+            </Programas>
+            <Soportes>No se requieren soportes para esta impresión.</Soportes>
+            <Descripcion>Un colgante de corazón impreso en resina para joyería utilizando la Creality LD-002H.</Descripcion>
+            <Precio>80</Precio>
+        </Impresion>
+        <Impresion codigo="IMPRE-IMP10">
+            <Nombre>Pulsera Floral</Nombre>
+            <TipoArchivo>OBJ</TipoArchivo>
+            <Impresora>Artillery Sidewinder X1</Impresora>
+            <Filamento>Resina para Joyería</Filamento>
+            <Programas>
+                <Programa>Cura</Programa>
+            </Programas>
+            <Soportes>Impresión con soportes automáticos generados por Cura.</Soportes>
+            <Descripcion>Una pulsera con diseño floral impresa en resina para joyería utilizando la Artillery Sidewinder X1.</Descripcion>
+            <Precio>90</Precio>
+        </Impresion>
+        <Impresion codigo="IMPRE-IMP11">
+            <Nombre>Modelo de Dentadura</Nombre>
+            <TipoArchivo>STL</TipoArchivo>
+            <Impresora>Prusa Research Prusa i3 MK3S+</Impresora>
+            <Filamento>Resina Dental</Filamento>
+            <Programas>
+                <Programa>Simplify3D</Programa>
+            </Programas>
+            <Soportes>No se requieren soportes para esta impresión.</Soportes>
+            <Descripcion>Un modelo de dentadura impreso en resina dental utilizando la Prusa Research Prusa i3 MK3S+.</Descripcion>
+            <Precio>100</Precio>
+        </Impresion>
+        <Impresion codigo="IMPRE-IMP12">
+            <Nombre>Corona Dental</Nombre>
+            <TipoArchivo>OBJ</TipoArchivo>
+            <Impresora>Anycubic Photon Mono X2</Impresora>
+            <Filamento>Resina Dental</Filamento>
+            <Programas>
+                <Programa>Cura</Programa>
+            </Programas>
+            <Soportes>Impresión con soportes automáticos generados por Cura.</Soportes>
+            <Descripcion>Una corona dental personalizada impresa en resina dental utilizando la Anycubic Photon Mono X2.</Descripcion>
+            <Precio>120</Precio>
+        </Impresion>
+    </Impresiones>
+</Impresoras3D>
+</Impresiones3DAVG>

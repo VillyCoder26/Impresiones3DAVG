@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Impresiones3DAVG>
+    <Portada>
+        <Descripcion></Descripcion>
+        <Usos>
+            <Uso></Uso>
+        </Usos>
+    </Portada>
+    <Impresoras3D>
+        <Marcas>
+            <Marca nombre="">
+                <Impresora codigo="" nombre="">
+                    <Modelo></Modelo>
+                    <Tipo></Tipo>
+                    <Descripcion></Descripcion>
+                    <Precio></Precio>
+                </Impresora>
+            </Marca>
+        </Marcas>
+    </Impresoras3D>
+    <Filamentos>
+        <Tipos>
+            <Tipo codigo="" nombre="">
+                <Descripcion></Descripcion>
+                <Precio></Precio>
+                <Usos>
+                    <Uso></Uso>
+                </Usos>
+            </Tipo>
+        </Tipos>
+    </Filamentos>
+    <Programas>
+        <Programa nombre="">
+            <Descripcion></Descripcion>
+        </Programa>
+    </Programas>
+    <Impresiones>
+        <Impresion codigo="">
+            <Nombre></Nombre>
+            <TipoArchivo></TipoArchivo>
+            <Impresora></Impresora>
+            <Filamento></Filamento>
+            <Programas>
+                <Programa></Programa>
+            </Programas>
+            <Soportes></Soportes>
+            <Descripcion></Descripcion>
+            <Precio></Precio>
+        </Impresion>
+    </Impresiones>
+</Impresiones3DAVG>

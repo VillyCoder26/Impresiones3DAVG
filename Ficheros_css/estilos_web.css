@@ -51,13 +51,6 @@ main {
     text-align: center;
 }
 
-/* Estilos para el pie de página */
-footer {
-    background-color: #4d4d7a; /* Cambiamos el color de fondo a un morado más oscuro */
-    color: #fff; /* Texto blanco para contrastar */
-    text-align: center;
-    padding: 20px;
-}
 
 /* Estilos para la tabla */
 table {
@@ -127,6 +120,14 @@ td {
     margin: 0 auto; /* Centramos el iframe horizontalmente */
 }
 
+/* Estilos para el pie de página */
+footer {
+    background-color: #4d4d7a; /* Cambiamos el color de fondo a un morado más oscuro */
+    color: #fff; /* Texto blanco para contrastar */
+    text-align: center;
+    padding: 20px;
+}
+
 /* Estilos para el footer */
 .footer {
     background-color: #666699;
@@ -136,13 +137,14 @@ td {
 }
 
 .footer-container {
-    display: inline-block; /* Mostrar los elementos en línea */
+    display: flex; /* Cambiamos a display flex para alinear los elementos */
+    justify-content: space-between; /* Distribuir los elementos uniformemente */
+    max-width: 80%; /* Limitamos el ancho del contenedor */
+    margin: 0 auto; /* Centramos el contenedor */
 }
 
 .footer-column {
-    display: inline-block; /* Mostrar los elementos en línea */
-    margin: 0 300px; /* Aumentar el espacio entre las columnas */
-    position: relative; /* Establecer posición relativa */
+    /* Eliminamos margin y position de este selector */
     vertical-align: middle; /* Alinear verticalmente */
 }
 
@@ -165,7 +167,6 @@ td {
     vertical-align: middle; /* Alinear verticalmente al centro */
     margin-right: 10px; /* Añadir espacio entre la imagen y el texto */
 }
-
 /* Estilos para los títulos y descripciones de la tabla Artillery */
 #artillery-table h3, #artillery-table p {
     background-color: #ddd; /* Fondo gris para los títulos y descripciones */
@@ -300,14 +301,24 @@ td {
 }
 /* Estilos para las tablas de filamentos */
 #pla-table, #abs-table, #petg-table, #tpu-table, #nylon-table, #resina-estandar-table, #resina-joyeria-table {
-    max-width: 15.7%; /* Establecer el ancho máximo */
+    max-width: 390px ; /* Establecemos el ancho al 33.33% del contenedor y restamos el margen */
     border-collapse: collapse;
-    background-color: #fff; /* Color de fondo */
+    margin-bottom: 20px; /* Espacio inferior para separar de otros elementos */
+    background-color: #fff; /* Cambiamos el color de fondo a blanco */
     display: inline-block; /* Mostrar las tablas en línea */
-    margin-right: 5px; /* Espacio a la derecha */
+    margin-right: 20px; /* Espacio a la derecha para separar las tablas */
     vertical-align: top; /* Alinear las tablas en la parte superior */
-    margin-bottom: 20px; /* Espacio inferior */
-    table-layout: fixed; /* Agregamos esta propiedad para controlar el ancho de la tabla */
+}
+
+/* Estilos para las celdas de título en las tablas de filamentos */
+#pla-table .titulo, #abs-table .titulo, #petg-table .titulo, #tpu-table .titulo, #nylon-table .titulo, #resina-estandar-table .titulo, #resina-joyeria-table .titulo {
+    font-weight: bold;
+    background-color: #9999cc;
+    color: #333;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 10px;
 }
 
 /* Estilos para las celdas de contenido en las tablas de filamentos */
@@ -319,67 +330,48 @@ td {
 
 /* Estilos para las imágenes dentro de las tablas de filamentos */
 #pla-table img, #abs-table img, #petg-table img, #tpu-table img, #nylon-table img, #resina-estandar-table img, #resina-joyeria-table img {
-    width: 350px; /* Ancho de la imagen */
-    height: 250px; /* Altura de la imagen */
-    border-radius: 10px; /* Bordes redondeados */
-    border: 2px solid #9999cc; /* Borde sólido */
-    transition: transform 0.3s ease; /* Transición suave */
-    margin-bottom: 10px; /* Espacio entre las imágenes */
-    
-}
-/* Estilos para las celdas de título en las tablas de filamentos */
-#pla-table .titulo, #abs-table .titulo, #petg-table .titulo, #tpu-table .titulo, #nylon-table .titulo, #resina-estandar-table .titulo, #resina-joyeria-table .titulo {
-    font-weight: bold;
-    background-color: #9999cc; /* Morado claro para los títulos */
-    color: #333; /* Texto gris oscuro para los títulos */
-    padding: 10px; /* Espaciado interno */
-    text-align: center; /* Centrar el texto horizontalmente */
-    vertical-align: middle; /* Centrar el texto verticalmente */
+    max-width: 100%;
+    height: 250px;
     border-radius: 10px;
-    padding-left: 15px; /* Desplazar el título hacia la derecha */
+    border: 2px solid #9999cc;
+    transition: transform 0.3s ease;
+    margin-bottom: 10px;
+}
+
+/* Estilos para los párrafos dentro de las tablas de filamentos */
+#pla-table p, #abs-table p, #petg-table p, #tpu-table p, #nylon-table p, #resina-estandar-table p, #resina-joyeria-table p {
+    background-color: #ddd;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px auto;
+    max-width: 300px;
+    text-align: center;
 }
 
 /* Efecto hover para las imágenes de las tablas de filamentos */
 #pla-table img:hover, #abs-table img:hover, #petg-table img:hover, #tpu-table img:hover, #nylon-table img:hover, #resina-estandar-table img:hover, #resina-joyeria-table img:hover {
-    transform: scale(1.05); /* Aumentar ligeramente el tamaño */
-    transition: transform 0.3s ease; /* Transición suave */
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
 }
-
-/* Estilos para las descripciones en las tablas de filamentos */
-#pla-table p, #abs-table p, #petg-table p, #tpu-table p, #nylon-table p, #resina-estandar-table p, #resina-joyeria-table p {
-    background-color: #ddd; /* Fondo gris para las descripciones */
-    padding: 10px; /* Espaciado interno */
-    border-radius: 10px; /* Bordes redondeados */
-    margin: 5px; /* Margen entre las descripciones */
-}
-
-/* Efecto hover para los títulos y descripciones de las tablas de filamentos */
-#pla-table .titulo:hover, #abs-table .titulo:hover, #petg-table .titulo:hover, #tpu-table .titulo:hover, #nylon-table .titulo:hover, #resina-estandar-table .titulo:hover, #resina-joyeria-table .titulo:hover,
-#pla-table p:hover, #abs-table p:hover, #petg-table p:hover, #tpu-table p:hover, #nylon-table p:hover, #resina-estandar-table p:hover, #resina-joyeria-table p:hover {
-    transform: scale(1.05); /* Aumentar ligeramente el tamaño */
-    transition: transform 0.3s ease; /* Transición suave */
-}
-
 /* Estilos para los elementos <ul> dentro de las tablas de filamentos */
 #pla-table ul, #abs-table ul, #petg-table ul, #tpu-table ul, #nylon-table ul, #resina-estandar-table ul, #resina-joyeria-table ul {
-    list-style-type: none; /* Quitamos los marcadores de lista */
-    padding: 0; /* Eliminamos el relleno predeterminado */
+    list-style-type: none;
+    padding: 0;
 }
 
 /* Estilos para los elementos <li> dentro de las tablas de filamentos */
 #pla-table li, #abs-table li, #petg-table li, #tpu-table li, #nylon-table li, #resina-estandar-table li, #resina-joyeria-table li {
-    background-color: #ddd; /* Fondo gris para los elementos <li> */
-    padding: 5px 10px; /* Espaciado interno */
-    border-radius: 5px; /* Bordes redondeados */
-    margin: 5px 0; /* Margen entre los elementos <li> */
-    transition: transform 0.3s ease; /* Transición suave */
+    background-color: #ddd;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+    transition: transform 0.3s ease;
 }
 
 /* Efecto hover para los elementos <li> dentro de las tablas de filamentos */
 #pla-table li:hover, #abs-table li:hover, #petg-table li:hover, #tpu-table li:hover, #nylon-table li:hover, #resina-estandar-table li:hover, #resina-joyeria-table li:hover {
-    transform: scale(1.05); /* Aumentar ligeramente el tamaño */
+    transform: scale(1.05);
 }
-
 
 /* Estilos para las tablas de programas */
 #cura-table,

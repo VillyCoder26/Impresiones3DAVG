@@ -137,15 +137,16 @@ footer {
 }
 
 .footer-container {
-    display: flex; /* Cambiamos a display flex para alinear los elementos */
-    justify-content: space-between; /* Distribuir los elementos uniformemente */
     max-width: 80%; /* Limitamos el ancho del contenedor */
     margin: 0 auto; /* Centramos el contenedor */
+    overflow: hidden; /* Para contener los elementos flotantes */
 }
 
 .footer-column {
-    /* Eliminamos margin y position de este selector */
-    vertical-align: middle; /* Alinear verticalmente */
+    float: left; /* Hacemos que los elementos floten a la izquierda */
+    width: 100%; /* Ancho completo para pantallas pequeñas */
+    box-sizing: border-box; /* Asegura que el padding y border se incluyan en el ancho total */
+    padding: 10px; /* Añadimos padding para el espacio interno */
 }
 
 .footer-column a {
@@ -166,6 +167,19 @@ footer {
     display: inline-block; /* Mostrar la imagen en línea */
     vertical-align: middle; /* Alinear verticalmente al centro */
     margin-right: 10px; /* Añadir espacio entre la imagen y el texto */
+}
+
+/* Media queries para el diseño responsivo */
+@media (min-width: 600px) {
+    .footer-column {
+        width: 50%; /* Dos columnas para pantallas medianas */
+    }
+}
+
+@media (min-width: 900px) {
+    .footer-column {
+        width: 33.33%; /* Tres columnas para pantallas grandes */
+    }
 }
 /* Estilos para los títulos y descripciones de la tabla Artillery */
 #artillery-table h3, #artillery-table p {
